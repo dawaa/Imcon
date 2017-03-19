@@ -1,4 +1,5 @@
 old/
 old_wordpress/
-ci/sites/imcon/application/config/
+ci/sites/imcon/application/config/config.php
+ci/sites/imcon/application/config/database.php
 config
