@@ -24,21 +24,20 @@ class Kontakta_oss extends CI_Controller
             $this->load->helper('recaptcha');
             $data = recaptcha();
 
-                if ( isset( $data->success ) && $data->success == true ) {
-                    $contact = $this->db->query("SELECT * FROM ContactInfo")->row_array();
-                    $from = $_POST['email'];
-                    $to = $contact['Email'];
-                    $to = 'alejandro.andersson@hyperisland.se';
+            if ( isset( $data->success ) && $data->success == true ) {
+                $contact = $this->db->query("SELECT * FROM ContactInfo")->row_array();
+                $from = $_POST['email'];
+                $to = $contact['Email'];
 
-                    $this->email->from($from);
-                    $this->email->to($to);
-                    $this->email->subject($_POST['question']);
-                    $this->email->message($_POST['contactText']);
-                    $this->email->send();
-                    redirect('/kontakt?success');
-                } else {
-                    redirect('/kontakt?error');
-                }
+                $this->email->from($from);
+                $this->email->to($to);
+                $this->email->subject($_POST['question']);
+                $this->email->message($_POST['contactText']);
+                $this->email->send();
+                redirect('/kontakt?success');
+            } else {
+                redirect('/kontakt?error');
+            }
 
 
         }
