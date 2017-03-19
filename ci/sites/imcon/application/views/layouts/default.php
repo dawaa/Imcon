@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="/assets/css/icons.css">
         <link rel="stylesheet" href="/assets/css/responsive.css">
         <link rel="stylesheet" href="/assets/css/style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="/assets/js/jquery.selectBox.min.js"></script>
 

@@ -68,6 +68,9 @@
                         echo "\n" . '---------------------------' . "\n";
                     }
                 ?></textarea>
+                <div class="g-recaptcha"
+                     style="margin-bottom: 20px;"
+                     data-sitekey="6LcohRkUAAAAADr2WUYBP0SgqQrdD-RYl_kIZwbu"></div>
                 <input type="submit" value="Skicka">
             </form>
         </div>
