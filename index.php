@@ -1,7 +1,4 @@
 <?php 
-// Second test 
-// Alright..?
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
